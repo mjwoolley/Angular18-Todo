@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MatChipsModule } from '@angular/material/chips';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-task-list',
@@ -32,6 +33,7 @@ import { MatChipsModule } from '@angular/material/chips';
     CommonModule,
     FormsModule,
     NgClass,
+    RouterModule,
   ],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.scss',

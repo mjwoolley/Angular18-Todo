@@ -1,0 +1,30 @@
+<div class="container-fluid py-3">
+  <div class="main">
+    <div class="charts row">
+      <!-- Donut -->
+      <div
+        echarts
+        [options]="taskStatusDonutOptions"
+        class="task-status-donut col-xl-4 col-lg-6 col-md-12 mb-2"
+      ></div>
+      <!-- Bar -->
+      <div
+        echarts
+        [options]="taskStatusBarOptions"
+        class="task-status-bar col-xl-4 col-lg-6 col-md-12 mb-2"
+      ></div>
+      <!-- Pie -->
+      <div
+        echarts
+        [options]="taskPriorityPieOptions"
+        class="task-prioriry-pie col-xl-4 col-lg-6 col-md-12 mb-2"
+      ></div>
+      <!-- Pie -->
+      <div
+        echarts
+        [options]="TimeSpentOnProjectsPieOptions"
+        class="time-spent-projects-pie col-xl-4 col-lg-6 col-md-12 mb-2"
+      ></div>
+    </div>
+  </div>
+</div>

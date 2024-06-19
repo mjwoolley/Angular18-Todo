@@ -1,0 +1,155 @@
+@import "../../../styles.scss";
+
+.sidebar-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: oblique;
+    cursor: pointer;
+    color: #14247c;
+    width: 25vw;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: oblique;
+  width: 75vw;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  width: 25%;
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0.2rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .email {
+    display: none;
+  }
+}
+
+.menus-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 75%;
+  li {
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  :hover {
+    background-color: #14247c;
+    color: white;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl) {
+  .sidebar-container {
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    justify-content: start;
+  }
+
+  .title {
+    margin: 0.5rem 0;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .user {
+    margin: 0.5rem;
+    width: 100%;
+    justify-content: center;
+    background-color: #14247c;
+    color: white;
+    .email {
+      display: block;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+  }
+  .menus-list {
+    flex-direction: column;
+    align-items: start;
+    li {
+      margin: 0;
+      cursor: pointer;
+      padding: 0;
+      padding-left: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (width > $breakpoint-xl) {
+  .sidebar-container {
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    justify-content: start;
+  }
+
+  .title {
+    margin: 0.5rem 0;
+    font-size: 2.3rem !important;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .user {
+    font-size: 1.4rem !important;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    justify-content: center;
+    background-color: #14247c;
+    color: white;
+    .email {
+      display: block;
+      font-weight: 400;
+      font-size: 1rem !important;
+    }
+  }
+  .menus-list {
+    flex-direction: column;
+    li {
+      font-size: 1.2rem !important;
+      margin: 0;
+      cursor: pointer;
+      padding: 0;
+      padding-left: 1rem;
+      width: 100%;
+    }
+  }
+}
